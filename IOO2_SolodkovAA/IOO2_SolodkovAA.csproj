@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9AF611F4-AD2A-4536-8B44-40790ECB71EB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>IOO2_SolodkovAA</RootNamespace>
+    <AssemblyName>IOO2_SolodkovAA</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.6.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.6.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.2, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.2\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="control\coming\coming_info.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="control\coming\coming_info.Designer.cs">
+      <DependentUpon>coming_info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="control\coming\coming_add_kontroagent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="control\coming\coming_add_kontroagent.Designer.cs">
+      <DependentUpon>coming_add_kontroagent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="control\coming\coming_product_update.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="control\coming\coming_product_update.Designer.cs">
+      <DependentUpon>coming_product_update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="control\coming\coming_product.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="control\coming\coming_product.Designer.cs">
+      <DependentUpon>coming_product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="control\coming\coming_new.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="control\coming\coming_new.Designer.cs">
+      <DependentUpon>coming_new.cs</DependentUpon>
+    </Compile>
+    <Compile Include="control\coming\coming_full.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="control\coming\coming_full.Designer.cs">
+      <DependentUpon>coming_full.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="control\product\product_full.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="control\product\product_full.Designer.cs">
+      <DependentUpon>product_full.cs</DependentUpon>
+    </Compile>
+    <Compile Include="control\product\product_new.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="control\product\product_new.Designer.cs">
+      <DependentUpon>product_new.cs</DependentUpon>
+    </Compile>
+    <Compile Include="control\kontragent\kontragent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="control\kontragent\kontragent.Designer.cs">
+      <DependentUpon>kontragent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="control\kontragent\kontragent_new.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="control\kontragent\kontragent_new.Designer.cs">
+      <DependentUpon>kontragent_new.cs</DependentUpon>
+    </Compile>
+    <Compile Include="control\product\product_update.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="control\product\product_update.Designer.cs">
+      <DependentUpon>product_update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="control\kontragent\kontragent_update.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="control\kontragent\kontragent_update.Designer.cs">
+      <DependentUpon>kontragent_update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="control\sale\sale_full.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="control\sale\sale_full.Designer.cs">
+      <DependentUpon>sale_full.cs</DependentUpon>
+    </Compile>
+    <Compile Include="control\sale\sale_info.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="control\sale\sale_info.Designer.cs">
+      <DependentUpon>sale_info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="control\sale\sale_kontroagent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="control\sale\sale_kontroagent.Designer.cs">
+      <DependentUpon>sale_kontroagent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="control\sale\sale_new.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="control\sale\sale_new.Designer.cs">
+      <DependentUpon>sale_new.cs</DependentUpon>
+    </Compile>
+    <Compile Include="control\sale\sale_product.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="control\sale\sale_product.Designer.cs">
+      <DependentUpon>sale_product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="control\sale\sale_product_update.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="control\sale\sale_product_update.Designer.cs">
+      <DependentUpon>sale_product_update.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="control\coming\coming_info.resx">
+      <DependentUpon>coming_info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="control\coming\coming_add_kontroagent.resx">
+      <DependentUpon>coming_add_kontroagent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="control\coming\coming_product_update.resx">
+      <DependentUpon>coming_product_update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="control\coming\coming_product.resx">
+      <DependentUpon>coming_product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="control\coming\coming_new.resx">
+      <DependentUpon>coming_new.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="control\coming\coming_full.resx">
+      <DependentUpon>coming_full.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="control\product\product_full.resx">
+      <DependentUpon>product_full.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="control\product\product_new.resx">
+      <DependentUpon>product_new.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="control\kontragent\kontragent.resx">
+      <DependentUpon>kontragent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="control\kontragent\kontragent_new.resx">
+      <DependentUpon>kontragent_new.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="control\product\product_update.resx">
+      <DependentUpon>product_update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="control\kontragent\kontragent_update.resx">
+      <DependentUpon>kontragent_update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="control\sale\sale_full.resx">
+      <DependentUpon>sale_full.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="control\sale\sale_info.resx">
+      <DependentUpon>sale_info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="control\sale\sale_kontroagent.resx">
+      <DependentUpon>sale_kontroagent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="control\sale\sale_new.resx">
+      <DependentUpon>sale_new.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="control\sale\sale_product.resx">
+      <DependentUpon>sale_product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="control\sale\sale_product_update.resx">
+      <DependentUpon>sale_product_update.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
